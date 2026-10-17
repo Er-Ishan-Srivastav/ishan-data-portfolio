@@ -24,7 +24,8 @@ A responsive, hand-built portfolio highlighting data engineering, backend develo
 - `assets/js/main.js` — mobile navigation, section tracking, scroll indicator, reveal effects, animated role text.
 - `assets/hero.svg` and `assets/web-divider.svg` — original local SVG art with an abstract data-grid/night-city motif.
 - `profile-readme/` — separate ready-to-copy GitHub profile README, matching graphics, and contribution-snake workflow.
-- `.github/workflows/snake.yml` — workflow that can generate a GitHub contribution snake into the `output` branch.
+- `.github/workflows/pages.yml` — publishes the static website to GitHub Pages on each push to `main`.
+- `.github/workflows/snake.yml` — generates a GitHub contribution snake into the `output` branch.
 
 ## Setup guide
 
@@ -43,10 +44,11 @@ Then open `http://localhost:8080`.
 ## Publish using GitHub Pages
 
 1. Create a public repository named `ishan-data-portfolio` under `Er-Ishan-Srivastav`.
-2. Upload/push the contents of this directory to the repository's `main` branch.
-3. In **Settings → Pages**, select **Deploy from a branch**, then choose `main` and `/ (root)`.
-4. Under **Settings → Actions → General**, ensure workflows have permission to write repository contents so the contribution-snake workflow can publish its generated `output` branch.
-5. Run **Actions → Generate contribution snake → Run workflow** once, then allow scheduled runs to refresh it daily.
+2. Push the contents of this repository to `main`.
+3. Open [Settings → Pages](https://github.com/Er-Ishan-Srivastav/ishan-data-portfolio/settings/pages) and select **GitHub Actions** as the publishing source.
+4. The `Deploy portfolio to GitHub Pages` workflow will publish the website. If its first run happened before Pages was enabled, open **Actions**, select that workflow, and choose **Run workflow**.
+5. Under **Settings → Actions → General**, allow read/write workflow permissions so the contribution-snake workflow can publish its generated `output` branch.
+6. Run **Actions → Generate contribution snake → Run workflow** once, then allow scheduled runs to refresh it daily.
 
 GitHub Pages may take several minutes to publish after setup. Stats cards and technology icons use public third-party image endpoints and can occasionally be rate-limited or unavailable; the portfolio layout itself does not require a frontend build step.
 
@@ -58,7 +60,7 @@ GitHub Pages may take several minutes to publish after setup. Stats cards and te
 | PayFlow UPI | Simulated UPI transaction system with ACID workflows, MySQL, concurrency handling and fraud rules | [Source](https://github.com/Er-Ishan-Srivastav/PayFlow-UPI-Management-System) |
 | CAMAF | Adaptive traffic-control research using computer vision, federated learning and SUMO simulation | [Source](https://github.com/Er-Ishan-Srivastav/Adaptive-Traffic-Control-System) |
 | BrillX | AI-assisted SaaS learning platform with Node.js, FastAPI, MongoDB and AWS | [Source](https://github.com/Er-Ishan-Srivastav/BrillX-Saas-Learning-Platform) |
-| Ishan Learning Hub | Public C-DAC Big Data Analytics study notes and revision modules | [Open hub](https://er-ishan-srivastav.github.io/ishan-data-portfolio/Ishan-Learning-Hub/) |
+| Ishan Learning Hub | Public C-DAC Big Data Analytics study notes and revision modules | [Open hub](https://er-ishan-srivastav.github.io/Ishan-Learning-Hub/) |
 
 SmartVolt is a simulation/learning project: it does not control physical meters or process real payments. CAMAF's conference manuscript is described as submitted for review, not accepted.
 
