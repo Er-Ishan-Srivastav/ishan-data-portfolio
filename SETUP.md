@@ -24,10 +24,11 @@ Git must be installed, and you must be signed in to GitHub (Git Credential Manag
 
 ## 3. Enable GitHub Pages
 
-1. Open repository **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select branch `main` and folder `/(root)`, then save.
-4. Wait until GitHub Pages reports the site as published.
+1. Open [repository Settings → Pages](https://github.com/Er-Ishan-Srivastav/ishan-data-portfolio/settings/pages).
+2. Under **Build and deployment → Source**, select **GitHub Actions** and save.
+3. The repository contains `.github/workflows/pages.yml`, which uploads the static site files and deploys them on every push to `main`.
+4. If the workflow was attempted before Pages was enabled, open **Actions → Deploy portfolio to GitHub Pages → Run workflow** once after changing the setting.
+5. Confirm the run succeeds and GitHub Pages shows the published URL.
 
 The default address for this repository will be:
 
