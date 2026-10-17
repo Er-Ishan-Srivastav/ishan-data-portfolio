@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 52" width="1400" height="52" role="img" aria-label="Blue and crimson data-stream divider">
+ <defs><linearGradient id="line" x1="0" x2="1"><stop offset="0" stop-color="#4fa3ff" stop-opacity="0"/><stop offset=".24" stop-color="#4fa3ff"/><stop offset=".5" stop-color="#ff4757"/><stop offset=".78" stop-color="#4fa3ff"/><stop offset="1" stop-color="#ff4757" stop-opacity="0"/></linearGradient><style>.wire{fill:none;stroke:url(#line);stroke-dasharray:1600;stroke-dashoffset:1600;animation:draw 3s ease-out forwards}.dot{animation:glow 2.2s ease-in-out infinite alternate}@keyframes draw{to{stroke-dashoffset:0}}@keyframes glow{to{opacity:.3;transform:scale(.72);transform-origin:center}}@media(prefers-reduced-motion:reduce){.wire,.dot{animation:none;stroke-dashoffset:0}}</style></defs>
+ <path class="wire" d="M0 25Q180 4 350 25T700 25T1050 25T1400 25" stroke-width="2.2"/>
+ <path class="wire" d="M0 25Q180 45 350 25T700 25T1050 25T1400 25" stroke-width=".9" opacity=".6"/>
+ <g fill="#ff4757"><circle class="dot" cx="140" cy="20" r="3"/><circle class="dot" cx="420" cy="27" r="3"/><circle class="dot" cx="700" cy="25" r="4"/><circle class="dot" cx="980" cy="23" r="3"/><circle class="dot" cx="1260" cy="28" r="3"/></g>
+</svg>
